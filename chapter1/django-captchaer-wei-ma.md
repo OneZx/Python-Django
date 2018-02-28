@@ -31,4 +31,14 @@ urlpatterns = [
 ```
 ![](/assets/captcha.jpg)
 
-##### users的forms.py中
+##### 将验证码展示到页面
+> users/forms.py中
+
+```
+from captcha.fields import CaptchaField
+
+class RegisterForm(forms.Form):
+    email = forms.EmailField(required=True)
+    password = forms.CharField(required=True, min_length=5)
+    captcha = CaptchaField()
+```
