@@ -35,11 +35,14 @@ urlpatterns = [
 > users/forms.py中
 
 ```
+# 引入captchaField
 from captcha.fields import CaptchaField
 
 class RegisterForm(forms.Form):
+    # 此处的email与前端的name保持一致
     email = forms.EmailField(required=True)
     password = forms.CharField(required=True, min_length=5)
+    # 应用验证码
     captcha = CaptchaField()
     
 ```
