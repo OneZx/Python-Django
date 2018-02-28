@@ -1,4 +1,5 @@
 #### Django-captcha 二维码
+[django-captcha](http://django-simple-captcha.readthedocs.io/en/latest/usage.html#installation)
 
 > workon 到django的env中
 
