@@ -30,3 +30,5 @@ urlpatterns = [
 	migrage
 ```
 ![](/assets/captcha.jpg)
+
+##### users的forms.py中
