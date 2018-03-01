@@ -99,8 +99,12 @@ class RegisterView(View):
             pass
 ```
 > 前端register.html中
+
 - 提交方式post, action提交的后台地址
+
 ![](/assets/post.png)
+
+- csrf
 
 ![](/assets/csrf.png)
 
