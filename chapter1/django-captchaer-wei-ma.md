@@ -56,5 +56,14 @@ class RegisterForm(forms.Form):
     captcha = CaptchaField()
 ```
 
+#### 3.前端获取验证码
+- 前端
+
+![](/assets/cap1.png)
+
+- 后台数据库
+
+![](/assets/33.png)
+
 
 
