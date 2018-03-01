@@ -67,7 +67,11 @@ class RegisterView(View):
         register_form = RegisterForm()
         return render(request, 'register.html', {'register_form':register_form})
 ```
+> register.html 中
 
+![](/assets/a1.png)
+
+---
 #### 3.前端获取验证码
 - 前端
 
