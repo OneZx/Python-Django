@@ -83,5 +83,20 @@ class RegisterView(View):
 ![](/assets/33.png)
 
 #### 4.编写register view的后台逻辑
+> users/views.py的RegisterView添加post方法
+
+```
+    def post(self, request):
+        register_form = RegisterForm(request.POST)
+        if register_form.is_valid():
+            user_name = request.POST.get("username", "")
+            pass_word = request.POST.get("password", "")
+            user_profile = UserProfile()
+            user_profile.username = user_name
+            user_profile.email = user_name
+            user_profile.password = make_password(pass_word)
+            user_profile.save()
+            pass
+```
 
 
