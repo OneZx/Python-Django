@@ -74,7 +74,7 @@ class RegisterView(View):
 ---
 #### 3.前端获取验证码
 - 前端
-    - 隐藏的hashkey传到后台进行验证
+    - 隐藏的hashkey被传到后台进行验证
     
 ![](/assets/cap1.png) 
     
