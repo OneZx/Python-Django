@@ -98,5 +98,9 @@ class RegisterView(View):
             user_profile.save()
             pass
 ```
+> 前端register.html中
+- 提交方式post, action提交的后台地址
+![](/assets/post.png)
 
+![](/assets/csrf.png)
 
