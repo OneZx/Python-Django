@@ -125,6 +125,20 @@ function refresh_captcha(event){
 #### 获取form值,封装成user_profile对象,保存数据库
 
 ```
+from django.contrib.auth.hashers import make_password
 
+        if register_form.is_valid():
+            user_name = request.POST.get("email", "")
+            pass_word = request.POST.get("password", "")
+
+            # 实例化一个user_profile对象，将前台值存入
+            user_profile = UserProfile()
+            user_profile.username = user_name
+            user_profile.email = user_name
+
+            # 加密password进行保存
+            user_profile.password = make_password(pass_word)
+            user_profile.save()
+            pass
 ```
 
