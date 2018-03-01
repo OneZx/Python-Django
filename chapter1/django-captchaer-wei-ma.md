@@ -4,11 +4,11 @@
 
 > workon 到django的env中
 
-* Install django-simple-captcha via pip: `pip install  django-simple-captcha`
+1. Install django-simple-captcha via pip: `pip install  django-simple-captcha`
 
-* Add `captcha` to the `INSTALLED_APPS` in your `settings.py`
+* Add `captcha` to the `INSTALLED_APPS` in  `settings.py`
 
-* Add an entry to your `urls.py`:
+* Add an entry to  `urls.py`:
 
 ```
 # django 1.9
@@ -35,7 +35,7 @@ urlpatterns = [
 
   ![](/assets/captcha.jpg)
 
-##### 将验证码展示到页面
+#### 2.将验证码展示到页面
 
 > users/forms.py中
 
