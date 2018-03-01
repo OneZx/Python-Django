@@ -127,16 +127,22 @@ function refresh_captcha(event){
 ```
 from django.contrib.auth.hashers import make_password
 
-        if register_form.is_valid():
-            user_name = request.POST.get("email", "")
-            pass_word = request.POST.get("password", "")
+class RegisterView(View):
+    def get(self, request):
+        register_form = RegisterForm()
+        return render(request, 'register.html', {'register_form':register_form})
 
-            # 实例化一个user_profile对象，将前台值存入
+    def post(self, request):
+        register_form = RegisterForm(request.POST)
+        if register_form.is_valid():
+            user_name = request.POST.get("username", "")
+            pass_word = request.POST.get("password", "")
+            
             user_profile = UserProfile()
             user_profile.username = user_name
             user_profile.email = user_name
-
-            # 加密password进行保存
+            
+            # 加密password,并保存
             user_profile.password = make_password(pass_word)
             user_profile.save()
             pass
