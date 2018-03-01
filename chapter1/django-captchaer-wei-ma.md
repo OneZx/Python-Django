@@ -79,7 +79,7 @@ class RegisterView(View):
 ![](/assets/cap1.png) 
     
 - 后台数据库
-
+    - 后台会将输入的验证码和hashkey一起比对
 ![](/assets/33.png)
 
 
