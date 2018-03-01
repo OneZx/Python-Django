@@ -138,6 +138,7 @@ class RegisterView(View):
             user_name = request.POST.get("username", "")
             pass_word = request.POST.get("password", "")
             
+            # 实例化一个user_profile对象,将前端获取的值传入
             user_profile = UserProfile()
             user_profile.username = user_name
             user_profile.email = user_name
