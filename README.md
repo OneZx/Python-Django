@@ -1,3 +1,7 @@
 # My Awesome Book
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+> python django
+
+- 本书是django框架的学习笔记, 用于记录学习过程
+- 同时分享出来供大家参考使用
+
