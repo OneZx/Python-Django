@@ -74,9 +74,10 @@ class RegisterView(View):
 ---
 #### 3.前端获取验证码
 - 前端
-
-![](/assets/cap1.png)
-
+    - 隐藏的字符串会被带到后台,django进行验证
+    
+![](/assets/cap1.png) 
+    
 - 后台数据库
 
 ![](/assets/33.png)
