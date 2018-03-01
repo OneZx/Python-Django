@@ -110,5 +110,6 @@ class RegisterView(View):
 
 #### 5.验证码的刷新
 
-```
+```js
+
 ```
