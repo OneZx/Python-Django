@@ -56,6 +56,15 @@ class RegisterForm(forms.Form):
     captcha = CaptchaField()
 ```
 
+> users/views.py 中
+
+```
+class RegisterView(View):
+    def get(self, request):
+        register_form = RegisterForm()
+        return render(request, 'register.html', {'register_form':register_form})
+```
+
 #### 3.前端获取验证码
 - 前端
 
