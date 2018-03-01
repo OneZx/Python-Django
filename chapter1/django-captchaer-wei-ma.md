@@ -85,7 +85,7 @@ class RegisterView(View):
 #### 4.编写register view的后台逻辑
 > users/views.py的RegisterView添加post方法
 
-```
+```py
     def post(self, request):
         register_form = RegisterForm(request.POST)
         if register_form.is_valid():
