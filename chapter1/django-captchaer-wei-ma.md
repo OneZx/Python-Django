@@ -108,3 +108,7 @@ class RegisterView(View):
 
 ![](/assets/csrf.png)
 
+#### 5.验证码的刷新
+
+```
+```
