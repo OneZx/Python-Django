@@ -34,6 +34,11 @@ urlpatterns = [
   ```
 
   ![](/assets/captcha.jpg)
+  
+- 生成的表
+
+  ![](/assets/capt.png)
+  
 
 #### 2.将验证码展示到页面
 
