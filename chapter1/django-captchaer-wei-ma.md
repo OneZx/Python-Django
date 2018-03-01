@@ -104,7 +104,7 @@ class RegisterView(View):
 
 ![](/assets/post.png)
 
-- csrf
+- form的末尾加上`csrf token`安全机制
 
 ![](/assets/csrf.png)
 
