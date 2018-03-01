@@ -82,5 +82,5 @@ class RegisterView(View):
     - 后台会将输入的验证码和hashkey一起比对
 ![](/assets/33.png)
 
-#### 4.编写views.py的后台逻辑
+#### 4.编写users/views.py的后台逻辑
 
