@@ -108,7 +108,7 @@ class RegisterView(View):
 
 ![](/assets/csrf.png)
 
-#### 5.验证码的刷新
+> 验证码的刷新
 
 ```js
 //刷新验证码
