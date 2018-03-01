@@ -59,6 +59,8 @@ class RegisterForm(forms.Form):
 > users/views.py 中
 
 ```
+from .forms import LoginForm, RegisterForm
+
 class RegisterView(View):
     def get(self, request):
         register_form = RegisterForm()
