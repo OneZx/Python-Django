@@ -63,6 +63,7 @@ from .forms import LoginForm, RegisterForm
 
 class RegisterView(View):
     def get(self, request):
+        # 添加验证码
         register_form = RegisterForm()
         return render(request, 'register.html', {'register_form':register_form})
 ```
